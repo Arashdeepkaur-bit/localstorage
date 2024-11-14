@@ -1,0 +1,20 @@
+<script>
+   var a=10;
+    function show()
+    {
+        
+        alert(a);
+        a=a+10;
+    localStorage.setItem("a",a);
+    }
+function show1()
+{
+    var t = localStorage.getItem("a")
+    alert(t);
+}
+
+</script>
+
+<input type="button" value="show" onclick="show()" >
+
+<input type="button" value="show1" onclick="show1()" >
