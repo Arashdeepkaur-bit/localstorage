@@ -13,7 +13,7 @@
    
     <script>
         function arash(){
-         const a = JSON.parse(localStorage.getItem("data"));
+         let a = JSON.parse(localStorage.getItem("data"));
         document.getElementById('Information').innerHTML = "hello"+" "+a.username+"<br>"+"Your email is:"+a.email;
         }
         window.onload=arash;
