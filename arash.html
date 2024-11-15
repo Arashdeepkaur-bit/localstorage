@@ -7,22 +7,16 @@
 
 </head>
 <body>
-    <nav class="navbar">
+    <nav style="background-color: cornflowerblue; height: 50px; text-align: center; font-size: larger; color:rgb(177, 7, 35);" class="navbar">
         <div id="Information"></div>
     </nav>
-    <div class="container">
-        <p>Username: <span id="Username"></span></p>
-        <p>Email: <span id="Email"></span></p>
-    </div>
-
+   
     <script>
-        const username = localStorage.getItem('username');
-        const email = localStorage.getItem('email');
-        const password = localStorage.getItem('password'); 
-
-        document.getElementById('Information').innerHTML = `Hello!, ${username}!`;
-        document.getElementById('Username').innerHTML = username;
-        document.getElementById('Email').innerHTML = email;
+        function arash(){
+         const a = JSON.parse(localStorage.getItem("data"));
+        document.getElementById('Information').innerHTML = "hello"+" "+a.username+"<br>"+"Your email is:"+a.email;
+        }
+        window.onload=arash;
     </script>
 </body>
 </html>
