@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display Information</title>
-    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <nav class="navbar">
-        <div id="userInfo"></div>
+        <div id="Information"></div>
     </nav>
     <div class="container">
-        <p>Username: <span id="displayUsername"></span></p>
-        <p>Email: <span id="displayEmail"></span></p>
+        <p>Username: <span id="Username"></span></p>
+        <p>Email: <span id="Email"></span></p>
     </div>
 
     <script>
@@ -20,9 +20,9 @@
         const email = localStorage.getItem('email');
         const password = localStorage.getItem('password'); 
 
-        document.getElementById('userInfo').innerText = `Welcome, ${username}!`;
-        document.getElementById('displayUsername').innerText = username;
-        document.getElementById('displayEmail').innerText = email;
+        document.getElementById('Information').innerHTML = `Hello!, ${username}!`;
+        document.getElementById('Username').innerHTML = username;
+        document.getElementById('Email').innerHTML = email;
     </script>
 </body>
 </html>
