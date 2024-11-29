@@ -1,0 +1,55 @@
+<!-- <form style="height: 300px; width: 300px; border: 5px solid black; margin: auto;" id="studentForm">
+      
+    <label> Enter ID</label><br>
+    <input  type="text" id="name" name="name" required><br><br>
+  
+    <label for="age"> Enter age</label><br>
+    <input type="text" id="age" name="age" required><br><br>
+  
+    <label for="username">Enter Username</label><br>
+    <input type="text" id="username" name="username" required><br><br>
+  
+    <input type="submit" onclick="sumbit()" value="Submit">
+    <button><a style="text-decoration: none;color: black;">Login</a></button>
+   
+    
+  </form> 
+  <script>
+   
+
+    function sumbit(){
+    const userid = document.getElementById('name').value; 
+    const password = document.getElementById('age').value;
+    const username = document.getElementById('username').value;
+    let data= {userid,password,username};
+    
+   localStorage.setItem("data",JSON.stringify(data))
+    }  
+  </script> -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Data</title>
+</head>
+<body>
+  <nav style="background-color: blue; padding: 10px; text-align: center;">
+        
+    <a href="/" style="color: black; margin: 50px;">Home</a>
+    <a href="/create" style="color: black; margin: 50px;">Create</a>
+    <a href="/update" style="color: black; margin: 50px;">Update</a>
+    <a href="/delete" style="color: black; margin: 50px;">Delete</a>
+</nav>
+
+
+    <h1>Create Data</h1>
+    <form id="createForm">
+        <label for="data">Enter Data: </label>
+        <input type="text" id="data" name="data" required>
+        <button type="submit">Create</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Data</title>
+</head>
+<body>
+    <nav style="background-color: blue; padding: 10px; text-align: center;">
+        
+        <a href="/" style="color: black; margin: 50px;">Home</a>
+        <a href="/create" style="color: black; margin: 50px;">Create</a>
+        <a href="/update" style="color: black; margin: 50px;">Update</a>
+        <a href="/delete" style="color: black; margin: 50px;">Delete</a>
+</nav>
+
+
+    <h1>Update Data</h1>
+    <form id="updateForm">
+        <label for="oldData">Old Data: </label>
+        <input type="text" id="oldData" name="oldData" required>
+        <br>
+        <label for="newData">New Data: </label>
+        <input type="text" id="newData" name="newData" required>
+        <button type="submit">Update</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
